@@ -67,6 +67,7 @@ export default Ember.Component.extend({
   }),
 
   pages: computed('count', 'current', 'countOut', 'countIn', function () {
+    console.log('recalculating');
     var seperator = this.get('seperator');
     var current = this.get('current');
     var count = this.get('count');

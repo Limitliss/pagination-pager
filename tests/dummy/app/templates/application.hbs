@@ -12,3 +12,13 @@
 {{pagination-pager count=1 current=1}}<br>
 {{pagination-pager count=1 current=1 hide=true}}
 {{pagination-pager count=1 current=1 pager=true hide=true}}
+
+<h1>Broken</h1>
+
+<h3> count dynamic </h3>
+{{input type="text" value=count}}<br />
+{{pagination-pager count=count current=1}}
+
+<h3> current dynamic </h3>
+{{input type="text" value=current}}<br />
+{{pagination-pager count=10 current=current}}
